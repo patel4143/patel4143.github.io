@@ -24,7 +24,7 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #4CA;
+    background-color: #399dcc;
     color: white;
 }
 
@@ -39,7 +39,32 @@ p {
 }
 table {
     text-align: center;
+    /* collapsed border taken from w3schools */
+    border-collapse: collapse;
 }
 body {
-   background-color: lightblue;
+    background-color: lightblue;
+}
+/* cutout text taken from w3schools */
+.cutout-text {
+    background-image: linear-gradient(#0016c7,dodgerblue,skyblue);
+    background-size: cover;
+    position: relative; /* Needed to position the cutout text in the middle of the image */
+    height: 150px; /* Some height */
+}
+
+.text {
+    background-color: white;
+    color: black;
+    font-size: 6vw; /* Responsive font size */
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+
+    width: 50%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    mix-blend-mode: screen; /* This makes the cutout text possible */
 }
