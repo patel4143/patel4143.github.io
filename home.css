@@ -42,6 +42,12 @@ table {
     /* collapsed border taken from w3schools */
     border-collapse: collapse;
 }
+th {
+    background-color: #a282dd;
+}
+td {
+    background-color: #d0b4ff;
+}
 body {
     background-color: lightblue;
 }
