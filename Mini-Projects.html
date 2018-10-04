@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Mini-Projects</title>
+    <script src="myScript.js"></script>
+    <link rel="stylesheet" href="Mini-Projects.css">
+</head>
+<body>
+<!--cutout text taken from w3schools.com-->
+<div class="cutout-text">
+    <div class="text">Mini Projects</div>
+</div>
+<!--Nav Bar-->
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="friends.html">Friends</a>
+    <a href="interests.html">Interests</a>
+    <a href="movies.html">Movies</a>
+    <a class="active" href="Mini-Projects.html">Mini-Projects</a>
+</div>
+<br>
+<form name="project1">
+    <h2>Temperature Bug</h2>
+    Please type a number to show the season: <input type="text" name="num1">
+    <br><br>
+    <button type="button" onclick="document.project1.result.value=temperatureBug()">Convert!</button>
+    <br><br>
+    <input type="text" readonly="true" name="result" style="border-style: none">
+    <!--Image for Temperature Bug-->
+    <img id="weather" src=" " height="175">
+
+</form>
+<br><br>
+<form name="project2">
+    <h2>Calorie Counter</h2>
+    Exercise codes:  Bowling, Golfing , Jogging, Darts
+    <br><br>
+    Time in minutes: 30 minutes, 60 minutes
+    <br><br>
+    Please type a exercise code to continue: <input type="text" name="word1"><br><br>
+    Time in minutes: <input type="text" name="time1">
+    <br><br>
+    <button type="button" onclick="document.project2.result.value=calorieCounter()">Calories!</button>
+    <br><br>
+    <input type="text" readonly="true" name="result" style="border-style: none">
+</form>
+<br><br>
+<form name="project3">
+    <h2>Grade Converter!</h2>
+    Please type a numeric score to convert: <input type="text" name="num1">
+    <br><br>
+    <button type="button" onclick="document.project3.result.value=assignGrade()">Convert!</button>
+    <br><br>
+    <input type="text" readonly="true" name="result" style="border-style: none">
+</form>
+
+</body>
+</html>
