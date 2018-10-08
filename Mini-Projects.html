@@ -34,12 +34,16 @@
 <br><br>
 <form name="project2">
     <h2>Calorie Counter</h2>
-    Exercise codes:  Bowling, Golfing , Jogging, Darts
+    Please select a exercise code to continue:
+    <select id="exercises">
+        <option value="bowling">Bowling</option>
+        <option value="golfing">Golfing</option>
+        <option value="jogging">Jogging</option>
+        <option value="darts">Darts</option>
+    </select>
     <br><br>
-    Time in minutes: 30 minutes, 60 minutes
-    <br><br>
-    Please type a exercise code to continue: <input type="text" name="word1"><br><br>
-    Time in minutes: <input type="text" name="time1">
+    Please enter the amount of minutes:
+    <input type="text" readony="true" name="time1">
     <br><br>
     <button type="button" onclick="document.project2.result.value=calorieCounter()">Calories!</button>
     <br><br>

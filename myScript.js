@@ -32,51 +32,23 @@ function temperatureBug()
  /* Project 2 Calorie Counter*/
 function  calorieCounter()
 {   //capture a score from HTML
-    var exercise = document.project2.word1.value.toLowerCase();
-    var time = document.project2.time1.value;
+    var exercise = document.getElementById('exercises').value ;
+    var time = Number(document.project2.time1.value) ;
     if (exercise === 'bowling') // an activity
     {
-        if (time == '30')
-        {
-            return "You burned 90 calories";
-        }
-        else if (time == '60')
-        {
-            return "You burned 180 calories";
-        }
+        return time*3 + " calories";
     }
     else if (exercise === "golfing" )
     {
-        if (time == '30')
-        {
-            return "You burned 120 calories";
-        }
-        else if (time == '60')
-        {
-            return "You burned 240 calories";
-        }
+        return time * 4 + " calories";
     }
     else if(exercise === 'jogging')
     {
-        if (time == '30')
-        {
-            return "You burned 100 calories";
-        }
-        else if (time == '60')
-        {
-            return "You burned 200 calories";
-        }
+        return time*3.5 + " calories";
     }
     else if(exercise === 'darts')
     {
-        if (time == '30')
-        {
-            return "You burned 70 calories";
-        }
-        else if (time =='60')
-        {
-            return "You burned 140 calories";
-        }
+       return time*2.5 + " calories";
     }
 
 }
