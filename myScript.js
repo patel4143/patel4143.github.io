@@ -18,37 +18,60 @@ function temperatureBug()
         image.src = "img/autumn.png";
         return "Autumn";
      }
-     else if (temp >= 0)
-    {
-        image.src = "img/winter.png";
-        return "Winter";
-    }
      else
      {
-         image.src = "img/cold.png";
+         image.src = "img/winter.png";
          return "Winter";
      }
  }
  /* Project 2 Calorie Counter*/
 function  calorieCounter()
 {   //capture a score from HTML
-    var exercise = document.getElementById('exercises').value ;
-    var time = Number(document.project2.time1.value) ;
-    if (exercise === 'bowling') // an activity
+    var exercise = document.project2.word1.value;
+    var time = document.project2.time1.value.toLowerCase();
+    if (exercise == 'bowling') // A
     {
-        return time*3 + " calories";
+        if (time = '30 minutes')
+        {
+            return "90 calories"
+        }
+        else if (time = '60 minutes')
+        {
+            return "180 calories"
+        }
     }
-    else if (exercise === "golfing" )
+    else if (exercise == "golfing" )
     {
-        return time * 4 + " calories";
+        if (time = '30 minutes')
+        {
+            return "120 calories"
+        }
+        else if (time = '60 minutes')
+        {
+            return "240 calories"
+        }
     }
-    else if(exercise === 'jogging')
+    else if(exercise == 'jogging')
     {
-        return time*3.5 + " calories";
+        if (time = '30 minutes')
+        {
+            return "100 calories"
+        }
+        else if (time = '60 minutes')
+        {
+            return "200 calories"
+        }
     }
-    else if(exercise === 'darts')
+    else if(exercise == 'darts')
     {
-       return time*2.5 + " calories";
+        if (time = '30 minutes')
+        {
+            return "70 calories"
+        }
+        else if (time ='60 minutes')
+        {
+            return "140 calories"
+        }
     }
 
 }

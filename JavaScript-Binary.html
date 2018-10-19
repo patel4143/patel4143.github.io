@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-Binary</title>
+    <script src="binaryScript.js"></script>
+    <link rel="stylesheet" href="JavaScript-Binary.css">
+</head>
+<body>
+<!--cutout text taken from w3schools.com-->
+<div class="cutout-text">
+    <div class="text">Binary</div>
+</div>
+<!--Nav Bar-->
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="friends.html">Friends</a>
+    <a href="interests.html">Interests</a>
+    <a href="movies.html">Movies</a>
+    <a href="Mini-Projects.html">Mini-Projects</a>
+    <a class="active" href="JavaScript-Binary.html">Binary</a>
+</div>
+<br><br>
+
+<form name="toBinary">
+    Enter a number to convert into binary:
+    <input name="input">
+    <button type="button" onclick="document.toBinary.result.value=tenToSmall(Number(document.toBinary.input.value), 2)">to Binary</button>
+    <input name="result">
+</form>
+<form name="toBase10">
+    <br><br>
+    Enter a binary number to convert to base 10:
+    <input name="input">
+    <button type="button" onclick="document.toBase10.result.value=smallToTen(Number(document.toBase10.input.value), 2)">to Base-10</button>
+    <input name="result">
+</form>
+
+<form name="toAnyBase">
+    <br><br>
+    Enter a number in any base:
+    <input name="num1">
+    <br><br>
+    Enter the base of the entered number:
+    <input name="baseNum">
+    <br><br>
+    Enter the base you would like the number to be converted to:
+    <input name="base1">
+    <button type="button" onclick="document.toAnyBase.result.value=xToy(Number(document.toAnyBase.num1.value),Number(document.toAnyBase.baseNum.value),Number(document.toAnyBase.base1.value))">to Any Base</button>
+    <br><br>
+    Result: <input name="result">
+</form>
+</body>
+</html>
