@@ -12,8 +12,6 @@ function tenToSmall(num, base) //convert a base-10 number to a smaller base
         smallNum = num%base + smallNum; //3%5 = 2...% returns remainder //doesn't add the nums, put it next to each other(string var)
         //setup num for the next iteration of the loop
         num = Math.floor(num/base); // floor gets rid of any remainders
-        alert(smallNum); //alert makes a popup
-        alert(num);
     }
 
     return smallNum;
@@ -44,9 +42,7 @@ function smallToTen(num, base) //convert a small-base number to base-10
 function xToy(num, x, y)
 {
     var num2 = smallToTen(num, x);
-    alert(num2);
     var numInBase = tenToSmall(num2, y);
-    alert(numInBase);
     return numInBase;
 
 }
