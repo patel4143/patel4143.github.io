@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jS Calculator</title>
+    <script src="CalculatorScript.js"></script>
+    <link rel="stylesheet" href="JS-Calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>jS Calculator</title>
+</head>
+<body>
+<div class="cutout-text">
+    <div class="text">Calculator</div>
+</div>
+<div class="topnav" align="center">
+    <a href="index.html">Home</a>
+    <a href="friends.html">Friends</a>
+    <a href="interests.html">Interests</a>
+    <a href="movies.html">Movies</a>
+    <a href="Mini-Projects.html">Mini-Projects</a>
+    <a href="JavaScript-Binary.html">Binary</a>
+    <a class="active" href="JS-Calculator.html">Calculator</a>
+</div>
+
+<h2> Basic Calculator <i class ="fa fa-calculator"></i></h2>
+<form name="calculator">
+    <br>
+    <input name="calcWindow" type="text" readonly="true">
+    <br><br><br>
+    <button type="button"  value="0" onclick="document.calculator.calcWindow.value+=0">0</button>
+    <button type="button"  value="1" onclick="document.calculator.calcWindow.value+=1">1</button>
+    <button type="button"  value="2" onclick="document.calculator.calcWindow.value+=2">2</button>
+    <button type="button"  value="3" onclick="document.calculator.calcWindow.value+=3">3</button>
+    <button type="button"  value="4" onclick="document.calculator.calcWindow.value+=4">4</button>
+    <br><br>
+    <button type="button"  value="5" onclick="document.calculator.calcWindow.value+=5">5</button>
+    <button type="button"  value="6" onclick="document.calculator.calcWindow.value+=6">6</button>
+    <button type="button"  value="7" onclick="document.calculator.calcWindow.value+=7">7</button>
+    <button type="button"  value="8" onclick="document.calculator.calcWindow.value+=8">8</button>
+    <button type="button"  value="9" onclick="document.calculator.calcWindow.value+=9">9</button>
+    <br><br>
+    <button type="button"  value="+" onclick="document.calculator.calcWindow.value+='+'">+</button>
+    <button type="button"  value="-" onclick="document.calculator.calcWindow.value+='-'">-</button>
+    <button type="button"  value="/" onclick="document.calculator.calcWindow.value+='/'">/</button>
+    <button type="button" value="*" onclick="document.calculator.calcWindow.value+='*'">*</button>
+    <button type="button" value="^" onclick="document.calculator.calcWindow.value+='^'">^</button>
+    <br><br>
+    <button type="button" value="C" onclick="document.calculator.calcWindow.value=''">C</button>
+    <button type="button" value="=" onclick="document.calculator.calcWindow.value=calculate(document.calculator.calcWindow.value)">=</button>
+    <br><br><br>
+
+</form>
+
+</body>
