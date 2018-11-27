@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MadLibs</title>
+    <script src="madLibs.js"></script>
+    <link rel="stylesheet" href="madLibs.css">
+</head>
+<body>
+<div class="cutout-text">
+    <div class="text">MadLib!</div>
+</div>
+<div class="topnav" align="center">
+    <a href="index.html">Home</a>
+    <a href="friends.html">Friends</a>
+    <a href="interests.html">Interests</a>
+    <a href="movies.html">Movies</a>
+    <a href="Mini-Projects.html">Mini-Projects</a>
+    <a href="JavaScript-Binary.html">Binary</a>
+    <a href="JS-Calculator.html">Calculator</a>
+    <a class="active" href="madLibs.html">Mad Libs</a>
+</div>
+<form name="madWords">
+<h1>Make your own MadLib!</h1>
+Animal: <input id="noun1"><br><br>
+Name: <input id="noun2"><br><br>
+Color: <input id="color1"><br><br>
+Body Part: <input id="bodypart"><br><br>
+Verb: <input id="verb1"><br><br>
+Food: <input id="food1"><br><br>
+Object: <input id="object1"><br><br>
+Adjective: <input id="adjective1"><br><br>
+Color: <input id="color2"><br><br>
+Verb that ends with -ed: <input id="verb2"> <br><br>
+
+<button type="button" onclick="document.getElementById('story').innerHTML=array1()" >Make Story Appear</button><br>
+<p id="story"></p>
+</form>
+</body>
+</html>
