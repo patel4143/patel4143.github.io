@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="quiz.js"></script>
+    <link rel="stylesheet" href="quiz.css">
+    <title>A Quiz</title>
+</head>
+<body>
+<div class="cutout-text">
+    <div class="text">Random Quiz</div>
+</div>
+<div class="topnav" align="center">
+    <a href="index.html">Home</a>
+    <a href="friends.html">Friends</a>
+    <a href="interests.html">Interests</a>
+    <a href="movies.html">Movies</a>
+    <a href="Mini-Projects.html">Mini-Projects</a>
+    <a href="JavaScript-Binary.html">Binary</a>
+    <a href="JS-Calculator.html">Calculator</a>
+    <a href="madLibs.html">Mad Libs</a>
+    <a class="active" href="quiz.html">Quiz</a>
+</div>
+
+<form name="quiz">
+    <br>
+    Question 1: What is the BEST season?<br>
+    <input type="radio" name="a1" value="Summer">Summer<br>
+    <input type="radio" name="a1" value="Winter">Winter<br>
+    <input type="radio" name="a1" value="Fall">Fall<br>
+    <input type="radio" name="a1" value="Spring">Spring<br>
+    <br><br>
+    Question 2: What falls but never gets hurt?<br>
+    <input type="text" name="a2"><br>
+    <br><br>
+    Question 3: Which ones are NOT a berry?<br>
+    <input type="checkbox" name="a3A" value="Banana">Banana<br>
+    <input type="checkbox" name="a3B" value="Strawberries">Strawberries<br>
+    <input type="checkbox" name="a3C" value="Watermelon">Watermelon<br>
+    <input type="checkbox" name="a3D" value="Broccoli">Broccoli<br>
+    <input type="checkbox" name="a3E" value="Orange">Orange<br>
+    <br><br>
+    <img src="img/giraffe.png" height="160" width="213"/><br>
+    Question 4: What is this?<br>
+    <input type="radio" name="a4" value="Elephant">An Elephant<br>
+    <input type="radio" name="a4" value="Giraffe">A Giraffe<br>
+    <input type="radio" name="a4" value="Bubble">A Bubble<br>
+    <br><br>
+    Question 5: Is cereal cold soup? <br>
+    <input type="checkbox" name="a5A" value="Yes">Duh...<br>
+    <input type="checkbox" name="a5B" value="Nope">Nope<br>
+    <input type="checkbox" name="a5C" value="idk">idk is life life?<br>
+    <input type="checkbox" name="a5D" value="why">why are you asking me this?<br>
+    <br><br>
+    <img src="img/mario.png" height="200" width="150"/><br>
+    Question 6: Who is this?<br>
+    <input type="text" name="a6"><br>
+    <br><br>
+    <button type="button" onclick="document.getElementById('answers').innerHTML=checkAnswers()">CHECK ANSWERS</button>
+    <p id="answers">
+
+    </p>
+</form>
+</body>
+</html>
