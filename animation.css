@@ -41,11 +41,11 @@ body
 }
 
 body {
-    background-image:linear-gradient(lightgray,lightskyblue,cadetblue);
+    background-image:linear-gradient(#ffffff, #cde0ff, #98b5ff);
 }
 /* cutout text taken from w3schools */
 .cutout-text {
-    background-image: linear-gradient(#0016c7,dodgerblue,skyblue);
+    background-image: linear-gradient(#0016c7,dodgerblue,skyblue); /*#ff6559, #c7000f, rgb(116, 5, 0)*/
     background-size: cover;
     position: relative; /* Needed to position the cutout text in the middle of the image */
     height: 150px; /* Some height */

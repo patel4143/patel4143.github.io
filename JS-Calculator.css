@@ -6,11 +6,15 @@ button {
 h2 {
     text-align: center;
 }
+
+body {
+    background-color: #a6abad;
+}
 form {
     border-radius: 7px;
     text-align: center;
     width: 200px;
-    background-image: linear-gradient(lightblue, skyblue);;
+    background-image: linear-gradient(#ebada8, #eb959b);;
     border: solid  2px black;
     padding: 3px;
     /*Center code taken from w3schools.com*/
@@ -47,12 +51,12 @@ input {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #399dcc;
+    background-color: #c76873;
     color: white;
 }
 /* cutout text taken from w3schools */
 .cutout-text {
-    background-image: linear-gradient(#0016c7,dodgerblue,skyblue);
+    background-image: linear-gradient(#c75c7c, #eb959b, #ffb664);
     background-size: cover;
     position: relative; /* Needed to position the cutout text in the middle of the image */
     height: 150px; /* Some height */

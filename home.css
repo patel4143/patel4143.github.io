@@ -11,7 +11,7 @@
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 18px 20px; /*18,20 */
     text-decoration: none;
     font-size: 17px;
 }
@@ -24,47 +24,34 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #399dcc;
+    background-color: #fff200;
     color: white;
 }
 
-h1 {
-    text-align: center;
-}
-h2 {
-    text-align: center;
-}
-p {
-    text-align: center;
-}
-table {
-    text-align: center;
-    /* collapsed border taken from w3schools */
-    border-collapse: collapse;
-}
 body {
-    background-color: lightblue;
+    background-color: #000000;
 }
 /* cutout text taken from w3schools */
 .cutout-text {
-    background-image: linear-gradient(#0016c7,dodgerblue,skyblue);
-    background-size: cover;
+    //background-image: linear-gradient(#0016c7,dodgerblue,skyblue);
+    background-image: url('img/daisies.jpg') ;
+    background-size: 300px;
     position: relative; /* Needed to position the cutout text in the middle of the image */
-    height: 150px; /* Some height */
+    height: 450px; /* Some height */
 }
 
 .text {
-    background-color: white;
-    color: black;
-    font-size: 6vw; /* Responsive font size */
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 8vw; /* Responsive font size */
     font-weight: bold;
     margin: 0 auto; /* Center the text container */
 
-    width: 50%;
+    width: 65%;
     text-align: center; /* Center text */
     position: absolute; /* Position text */
     top: 50%; /* Position text in the middle */
     left: 50%; /* Position text in the middle */
     transform: translate(-50%, -50%); /* Position text in the middle */
-    mix-blend-mode: screen; /* This makes the cutout text possible */
+    mix-blend-mode: multiply; /* This makes the cutout text possible */
 }

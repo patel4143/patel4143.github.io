@@ -23,12 +23,12 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #399dcc;
+    background-color: #29bba1;
     color: white;
 }
 /* cutout text taken from w3schools */
 .cutout-text {
-    background-image: linear-gradient(#0016c7,dodgerblue,skyblue);
+    background-image: linear-gradient(#8ff4dc, #29bba1, #8b6fbe);
     background-size: cover;
     position: relative; /* Needed to position the cutout text in the middle of the image */
     height: 150px; /* Some height */
